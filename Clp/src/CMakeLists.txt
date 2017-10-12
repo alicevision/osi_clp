@@ -36,7 +36,7 @@ list(REMOVE_ITEM CLP_SRC_HEADER ${REMOVE_HEADER})
 list(REMOVE_ITEM CLP_SRC_CPP ${REMOVE_CPP})
 
 ADD_LIBRARY(lib_clp ${CLP_SRC_HEADER} ${CLP_SRC_CPP})
-INSTALL(TARGETS lib_clp DESTINATION lib EXPORT openMVG-targets)
+INSTALL(TARGETS lib_clp DESTINATION lib EXPORT aliceVision-targets)
 
 add_subdirectory(OsiClp)
 
